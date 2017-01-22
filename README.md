@@ -20,7 +20,9 @@ Coming into the hackathon, our goal was to create a connected patient experience
 * __Accessibility__ - Our service is available to anyone with a mobile phone can use our service, regardless of whether or not they have internet access.
 * __No Written Code__ - We did not write a single line of code for this service. By leveraging other commercially available APIs and platforms, we have no infrastructure 
 
-## What’s next for text based medical diagnoses
+## What’s next for SMS Symptom Analyzing?
 * __Increased Accessibility__ - We want to include additional language support, such as Chinese or French, as well as having voice automated response for those who are visually impaired.
 * __Additional Inputs__ - We want to increase the range of inputs that could be directed at our service. This includes devices such as the Amazon Echo, Google Home, etc.
 * __Better Location Recommendation__ - Integrate with clinic, hospital, and other medical service data to better target recommended providers.
+
+
