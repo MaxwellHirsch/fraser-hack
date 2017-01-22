@@ -1,0 +1,1923 @@
+{
+  "id": 26983,
+  "uuid": "bf9caf35-3439-4eb0-8a6e-8a0f654d8375",
+  "display": {
+    "aliases": {
+      
+    }
+  },
+  "tree": {
+    "id": 5
+  },
+  "methods": [
+    {
+      "joins": {
+        
+      },
+      "address": "root:kernel:control:0.0.1:callable",
+      "parents": {
+        "version": {
+          "address": "root:kernel:control:0.0.1",
+          "key": "0.0.1",
+          "data": {
+            "name": "0.0.1"
+          }
+        },
+        "channel": {
+          "address": "root:kernel:control",
+          "key": "control",
+          "data": {
+            "name": "control"
+          }
+        }
+      },
+      "uuid": "HyWTuyfDe",
+      "branches": {
+        
+      },
+      "node": {
+        "key": "callable",
+        "data": {
+          "name": "From Another FLO"
+        },
+        "model": {
+          "type": "method",
+          "_v": 2,
+          "key": "callable",
+          "executable": false,
+          "displayed": true,
+          "async": false,
+          "cooperative": false,
+          "mirrored": true,
+          "dependencies": [
+            
+          ],
+          "timeout": 30000,
+          "idempotent": false,
+          "hooks": {
+            
+          },
+          "policy": {
+            "error": {
+              "type": "finish"
+            }
+          },
+          "metadata": {
+            "id": null,
+            "name": "From Another FLO",
+            "description": "Start a FLO that executes on-demand, i.e. called by another FLO or via the Azuqua API."
+          },
+          "meta": {
+            
+          },
+          "config": null,
+          "partnerChannelKeys": null,
+          "inputs": {
+            "extensible": true,
+            "rules": {
+              "*": {
+                "types": [
+                  "*"
+                ],
+                "collection": "*"
+              }
+            },
+            "groupRules": {
+              "body": {
+                "type": "object",
+                "reserved": {
+                  
+                },
+                "extensible": true
+              },
+              "headers": {
+                "type": "object",
+                "reserved": {
+                  "Content-Type": "string"
+                },
+                "extensible": true
+              },
+              "query": {
+                "type": "object",
+                "reserved": {
+                  
+                },
+                "extensible": true
+              }
+            },
+            "data": {
+              "HJ-WT_kzDg": {
+                "id": "HJ-WT_kzDg",
+                "group": "context",
+                "key": "index",
+                "value": {
+                  "error": false,
+                  "type": "number",
+                  "collection": false,
+                  "data": null,
+                  "available": [
+                    
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "displayname": "Index",
+                  "index": 0
+                },
+                "required": false,
+                "flags": "d"
+              },
+              "rJQ-auJzPx": {
+                "id": "rJQ-auJzPx",
+                "group": "context",
+                "key": "execution_id",
+                "value": {
+                  "error": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": null,
+                  "available": [
+                    
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "displayname": "Execution ID",
+                  "index": 1
+                },
+                "required": false,
+                "flags": "d"
+              },
+              "r1lW0OkMPx": {
+                "id": "r1lW0OkMPx",
+                "group": null,
+                "key": "question",
+                "value": {
+                  "error": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "Date",
+                    "Array",
+                    "object",
+                    "file",
+                    "flo"
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "index": 2,
+                  "typeLocked": true
+                },
+                "required": false,
+                "flags": "d"
+              },
+              "Skgk_c1fDg": {
+                "id": "Skgk_c1fDg",
+                "group": null,
+                "key": "recipient",
+                "value": {
+                  "error": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "Date",
+                    "Array",
+                    "object",
+                    "file",
+                    "flo"
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "index": 3
+                },
+                "required": false,
+                "flags": "d"
+              }
+            }
+          },
+          "outputs": {
+            "extensible": true,
+            "rules": {
+              "*": {
+                "types": [
+                  "*"
+                ],
+                "collection": "*"
+              }
+            },
+            "data": {
+              "HJx-6dyfvg": {
+                "id": "HJx-6dyfvg",
+                "group": "context",
+                "key": "index",
+                "value": {
+                  "error": false,
+                  "type": "number",
+                  "collection": false,
+                  "data": null,
+                  "available": [
+                    
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "displayname": "Index",
+                  "index": 0
+                }
+              },
+              "B1G-p_kzvx": {
+                "id": "B1G-p_kzvx",
+                "group": "context",
+                "key": "execution_id",
+                "value": {
+                  "error": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": null,
+                  "available": [
+                    
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "displayname": "Execution ID",
+                  "index": 1
+                }
+              },
+              "rybCdkfwg": {
+                "id": "rybCdkfwg",
+                "group": null,
+                "key": "question",
+                "value": {
+                  "error": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "Date",
+                    "Array",
+                    "object",
+                    "file",
+                    "flo"
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "index": 2,
+                  "typeLocked": true
+                }
+              },
+              "rykO9kMwe": {
+                "id": "rykO9kMwe",
+                "group": null,
+                "key": "recipient",
+                "value": {
+                  "error": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "Date",
+                    "Array",
+                    "object",
+                    "file",
+                    "flo"
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "index": 3
+                }
+              }
+            },
+            "groupRules": {
+              "context": {
+                "extensible": false
+              }
+            }
+          },
+          "runtime": {
+            
+          }
+        }
+      },
+      "pins": {
+        "rykO9kMwe": {
+          "SJ8Uqkzwe": [
+            {
+              "input": "BJxI8qkMDe",
+              "transform": null
+            }
+          ]
+        },
+        "rybCdkfwg": {
+          "SklJBezwl": [
+            {
+              "input": "rkWx1HlMPx",
+              "transform": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "joins": {
+        
+      },
+      "address": "root:channels:http:twilio:1.0.16:sendAnSMS",
+      "parents": {
+        "version": {
+          "address": "root:channels:http:twilio:1.0.16",
+          "key": "1.0.16",
+          "data": {
+            "name": "1.0.16",
+            "id": 6381
+          }
+        },
+        "channel": {
+          "address": "root:channels:http:twilio",
+          "key": "twilio",
+          "data": {
+            "name": "twilio",
+            "id": 83
+          }
+        }
+      },
+      "uuid": "SJ8Uqkzwe",
+      "branches": {
+        
+      },
+      "node": {
+        "key": "sendAnSMS",
+        "data": {
+          "name": "Send an SMS"
+        },
+        "model": {
+          "type": "method",
+          "_v": 2,
+          "key": "sendAnSMS",
+          "executable": true,
+          "displayed": true,
+          "async": false,
+          "cooperative": false,
+          "mirrored": false,
+          "compat": false,
+          "inlined": false,
+          "dependencies": [
+            
+          ],
+          "timeout": 30000,
+          "idempotent": false,
+          "monitor": false,
+          "webhook": false,
+          "webhookList": false,
+          "webhookConditions": false,
+          "mobile": false,
+          "hooks": {
+            
+          },
+          "policy": {
+            "error": {
+              "type": "finish"
+            }
+          },
+          "metadata": {
+            "id": 120959,
+            "name": "Send an SMS",
+            "description": null
+          },
+          "meta": {
+            
+          },
+          "config": 12181,
+          "partnerChannelKeys": 66,
+          "inputs": {
+            "extensible": false,
+            "rules": {
+              
+            },
+            "groupRules": {
+              "message": {
+                "extensible": false,
+                "reserved": {
+                  
+                },
+                "type": "object"
+              }
+            },
+            "data": {
+              "BJxI8qkMDe": {
+                "id": "BJxI8qkMDe",
+                "group": "message",
+                "key": "to",
+                "value": {
+                  "error": false,
+                  "proxy": false,
+                  "check": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    
+                  ]
+                },
+                "required": true,
+                "ref": false,
+                "metadata": {
+                  "index": 0
+                },
+                "flags": "d"
+              },
+              "SkZ8LqkGPg": {
+                "id": "SkZ8LqkGPg",
+                "group": "message",
+                "key": "body",
+                "value": {
+                  "error": false,
+                  "proxy": false,
+                  "check": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    
+                  ]
+                },
+                "required": true,
+                "ref": false,
+                "metadata": {
+                  "index": 1
+                },
+                "flags": "d"
+              },
+              "HJMLIq1Gvx": {
+                "id": "HJMLIq1Gvx",
+                "group": "parameters",
+                "key": "phone_number",
+                "value": {
+                  "error": false,
+                  "proxy": false,
+                  "check": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "+16043301347",
+                  "available": [
+                    
+                  ]
+                },
+                "required": false,
+                "ref": false,
+                "metadata": {
+                  "type": "dynamic",
+                  "method": {
+                    "channel": "twilio",
+                    "operation": "listNumbers",
+                    "key": "friendly_name",
+                    "value": "phone_number"
+                  },
+                  "displayname": "Phone number",
+                  "ordering": 0,
+                  "index": 2
+                },
+                "flags": "p"
+              }
+            }
+          },
+          "outputs": {
+            "extensible": false,
+            "rules": {
+              
+            },
+            "groupRules": {
+              "message": {
+                "extensible": false,
+                "reserved": {
+                  
+                },
+                "type": "object"
+              }
+            },
+            "data": {
+              "ByXLUqJMPx": {
+                "id": "ByXLUqJMPx",
+                "group": "message",
+                "key": "sid",
+                "value": {
+                  "error": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "index": 0
+                }
+              },
+              "BJE8Ic1fvg": {
+                "id": "BJE8Ic1fvg",
+                "group": "message",
+                "key": "dateCreated",
+                "value": {
+                  "error": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "index": 1
+                }
+              }
+            }
+          },
+          "runtime": {
+            
+          },
+          "comments": "Send An SMS with Twilio"
+        }
+      },
+      "pins": {
+        
+      }
+    },
+    {
+      "joins": {
+        
+      },
+      "address": "root:kernel:string:0.0.1:concat",
+      "parents": {
+        "version": {
+          "address": "root:kernel:string:0.0.1",
+          "key": "0.0.1",
+          "data": {
+            "name": "0.0.1"
+          }
+        },
+        "channel": {
+          "address": "root:kernel:string",
+          "key": "string",
+          "data": {
+            "name": "string"
+          }
+        }
+      },
+      "uuid": "SklJBezwl",
+      "branches": {
+        
+      },
+      "node": {
+        "key": "concat",
+        "data": {
+          "name": "Concatenate"
+        },
+        "model": {
+          "type": "method",
+          "_v": 2,
+          "key": "concat",
+          "executable": false,
+          "displayed": true,
+          "async": false,
+          "cooperative": false,
+          "mirrored": false,
+          "dependencies": [
+            
+          ],
+          "timeout": 90000,
+          "idempotent": false,
+          "hooks": {
+            
+          },
+          "policy": {
+            "error": {
+              "type": "finish"
+            }
+          },
+          "metadata": {
+            "id": null,
+            "name": "Concatenate",
+            "description": "Return the concatenation of a list of strings."
+          },
+          "meta": {
+            
+          },
+          "config": null,
+          "partnerChannelKeys": null,
+          "inputs": {
+            "extensible": true,
+            "rules": {
+              "*": {
+                "types": [
+                  "string"
+                ],
+                "collection": false
+              }
+            },
+            "data": {
+              "rkelJSgGDx": {
+                "id": "rkelJSgGDx",
+                "group": null,
+                "key": "string1",
+                "value": {
+                  "type": "string",
+                  "collection": false,
+                  "data": "https:\/\/api.infermedica.com\/v2\/symptoms\/",
+                  "available": [
+                    
+                  ],
+                  "error": false
+                },
+                "required": true,
+                "ref": false,
+                "metadata": {
+                  "index": 0
+                },
+                "flags": "d"
+              },
+              "rkWx1HlMPx": {
+                "id": "rkWx1HlMPx",
+                "group": null,
+                "key": "string2",
+                "value": {
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    
+                  ],
+                  "error": false
+                },
+                "required": true,
+                "ref": false,
+                "metadata": {
+                  "index": 1
+                },
+                "flags": "d"
+              }
+            }
+          },
+          "outputs": {
+            "extensible": false,
+            "data": {
+              "r1feyHlGvg": {
+                "id": "r1feyHlGvg",
+                "group": null,
+                "key": "output",
+                "value": {
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    
+                  ],
+                  "error": false
+                },
+                "ref": false,
+                "metadata": {
+                  "index": 0,
+                  "description": "",
+                  "displayname": "Symptom URL",
+                  "typeLocked": false
+                }
+              }
+            }
+          },
+          "runtime": {
+            
+          }
+        }
+      },
+      "pins": {
+        "r1feyHlGvg": {
+          "HkVkSefDg": [
+            {
+              "input": "SJlNyBlMPg",
+              "transform": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "joins": {
+        
+      },
+      "address": "root:kernel:http:0.0.1:get",
+      "parents": {
+        "version": {
+          "address": "root:kernel:http:0.0.1",
+          "key": "0.0.1",
+          "data": {
+            "name": "0.0.1"
+          }
+        },
+        "channel": {
+          "address": "root:kernel:http",
+          "key": "http",
+          "data": {
+            "name": "http"
+          }
+        }
+      },
+      "uuid": "HkVkSefDg",
+      "branches": {
+        
+      },
+      "node": {
+        "key": "get",
+        "data": {
+          "name": "Get"
+        },
+        "model": {
+          "type": "method",
+          "_v": 2,
+          "key": "get",
+          "executable": true,
+          "displayed": true,
+          "async": false,
+          "cooperative": false,
+          "mirrored": false,
+          "dependencies": [
+            
+          ],
+          "timeout": 90000,
+          "idempotent": false,
+          "hooks": {
+            
+          },
+          "policy": {
+            "error": {
+              "type": "finish"
+            }
+          },
+          "metadata": {
+            "id": null,
+            "name": "Get",
+            "description": "Perform an HTTP GET request, returning the result of this request and the response headers."
+          },
+          "meta": {
+            
+          },
+          "config": null,
+          "partnerChannelKeys": null,
+          "inputs": {
+            "extensible": false,
+            "rules": {
+              "*": {
+                "types": [
+                  "*"
+                ],
+                "collection": "*"
+              }
+            },
+            "groupRules": {
+              "headers": {
+                "type": "object",
+                "reserved": {
+                  "Content-Type": "string"
+                },
+                "extensible": true
+              },
+              "query": {
+                "type": [
+                  "object",
+                  "string"
+                ],
+                "reserved": {
+                  
+                },
+                "extensible": true
+              }
+            },
+            "data": {
+              "SJlNyBlMPg": {
+                "id": "SJlNyBlMPg",
+                "group": null,
+                "key": "url",
+                "value": {
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    "string"
+                  ],
+                  "error": false
+                },
+                "required": true,
+                "ref": false,
+                "metadata": {
+                  "index": 0
+                },
+                "flags": "d"
+              },
+              "B1bN1HxzPg": {
+                "id": "B1bN1HxzPg",
+                "group": null,
+                "key": "filterEmpty",
+                "value": {
+                  "type": "boolean",
+                  "collection": false,
+                  "data": true,
+                  "available": [
+                    "boolean"
+                  ]
+                },
+                "required": false,
+                "ref": false,
+                "metadata": {
+                  "hidden": true,
+                  "forceHide": true,
+                  "index": 1
+                },
+                "flags": "d"
+              },
+              "SJM41rgzDl": {
+                "id": "SJM41rgzDl",
+                "group": "ssl",
+                "key": "cert",
+                "value": {
+                  "type": "string",
+                  "collection": false,
+                  "data": null,
+                  "available": [
+                    "string"
+                  ]
+                },
+                "required": false,
+                "ref": false,
+                "metadata": {
+                  "hidden": true,
+                  "forceHide": true,
+                  "index": 2
+                },
+                "flags": "d"
+              },
+              "BJXEyBlGPe": {
+                "id": "BJXEyBlGPe",
+                "group": "ssl",
+                "key": "key",
+                "value": {
+                  "type": "string",
+                  "collection": false,
+                  "data": null,
+                  "available": [
+                    "string"
+                  ]
+                },
+                "required": false,
+                "ref": false,
+                "metadata": {
+                  "hidden": true,
+                  "forceHide": true,
+                  "index": 3
+                },
+                "flags": "d"
+              },
+              "HkN4ySgMDg": {
+                "id": "HkN4ySgMDg",
+                "group": "ssl",
+                "key": "ca",
+                "value": {
+                  "type": "string",
+                  "collection": false,
+                  "data": null,
+                  "available": [
+                    "string"
+                  ]
+                },
+                "required": false,
+                "ref": false,
+                "metadata": {
+                  "hidden": true,
+                  "forceHide": true,
+                  "index": 4
+                },
+                "flags": "d"
+              },
+              "HkrV1BxGDl": {
+                "id": "HkrV1BxGDl",
+                "group": "ssl",
+                "key": "passphrase",
+                "value": {
+                  "type": "string",
+                  "collection": false,
+                  "data": null,
+                  "available": [
+                    "string"
+                  ]
+                },
+                "required": false,
+                "ref": false,
+                "metadata": {
+                  "hidden": true,
+                  "forceHide": true,
+                  "index": 5
+                },
+                "flags": "d"
+              },
+              "BJHzSlzwg": {
+                "id": "BJHzSlzwg",
+                "group": "headers",
+                "key": "App-Id",
+                "value": {
+                  "error": false,
+                  "proxy": false,
+                  "check": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "9063774a",
+                  "available": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "Date",
+                    "Array",
+                    "object",
+                    "file",
+                    "flo"
+                  ]
+                },
+                "required": false,
+                "ref": false,
+                "metadata": {
+                  "index": 6
+                },
+                "flags": "d"
+              },
+              "BydGHgMPg": {
+                "id": "BydGHgMPg",
+                "group": "headers",
+                "key": "App-Key",
+                "value": {
+                  "error": false,
+                  "proxy": false,
+                  "check": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "f8c868985e41d1c92428f9bc1871c7c0",
+                  "available": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "Date",
+                    "Array",
+                    "object",
+                    "file",
+                    "flo"
+                  ]
+                },
+                "required": false,
+                "ref": false,
+                "metadata": {
+                  "index": 7
+                },
+                "flags": "d"
+              },
+              "SyS7rgGDg": {
+                "id": "SyS7rgGDg",
+                "group": "headers",
+                "key": "Content-Type",
+                "value": {
+                  "error": false,
+                  "proxy": false,
+                  "check": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "application\/json",
+                  "available": [
+                    "string"
+                  ]
+                },
+                "required": false,
+                "ref": false,
+                "metadata": {
+                  "index": 8
+                },
+                "flags": "d"
+              }
+            }
+          },
+          "outputs": {
+            "extensible": false,
+            "rules": {
+              "*": {
+                "types": [
+                  "*"
+                ],
+                "collection": "*"
+              }
+            },
+            "groupRules": {
+              "body": {
+                "type": [
+                  "*"
+                ],
+                "reserved": {
+                  
+                },
+                "extensible": true
+              },
+              "headers": {
+                "type": "object",
+                "reserved": {
+                  "Content-Type": "string"
+                },
+                "extensible": true
+              }
+            },
+            "data": {
+              "HJLV1BeGPx": {
+                "id": "HJLV1BeGPx",
+                "group": null,
+                "key": "statusCode",
+                "value": {
+                  "type": "number",
+                  "collection": false,
+                  "data": null,
+                  "available": [
+                    "number"
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "index": 0
+                }
+              },
+              "rJeVrgfPg": {
+                "id": "rJeVrgfPg",
+                "group": "body",
+                "key": "question",
+                "value": {
+                  "error": false,
+                  "type": "string",
+                  "collection": false,
+                  "data": "",
+                  "available": [
+                    "string",
+                    "number",
+                    "boolean",
+                    "Date",
+                    "Array",
+                    "object",
+                    "file",
+                    "flo"
+                  ]
+                },
+                "ref": false,
+                "metadata": {
+                  "index": 1
+                }
+              }
+            }
+          },
+          "runtime": {
+            
+          }
+        }
+      },
+      "pins": {
+        "rJeVrgfPg": {
+          "SJ8Uqkzwe": [
+            {
+              "input": "SkZ8LqkGPg",
+              "transform": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "model": {
+    "type": "flo",
+    "_v": 2,
+    "anon": false,
+    "verbose": false,
+    "complexity": 0.25068965517241,
+    "flannel": false,
+    "durable": false,
+    "flags": {
+      "looseBooleans": true,
+      "looseNulls": true,
+      "looseStrings": true
+    },
+    "metadata": {
+      "id": 26983,
+      "user_id": null,
+      "org_id": 5601,
+      "rbac": {
+        
+      },
+      "description": "",
+      "version": "0.0.1",
+      "channel_tree_id": 5,
+      "name": "Send Single Question",
+      "async": false,
+      "org": {
+        "id": 5601
+      },
+      "user": {
+        
+      },
+      "partner": {
+        
+      },
+      "log": false
+    },
+    "vas": {
+      "metadata": {
+        "execID": null,
+        "execCount": null,
+        "started": null,
+        "compiled": "2017-01-22T09:02:36.953Z",
+        "callback": null,
+        "channel": null,
+        "stackLength": 1,
+        "localStackLength": 1,
+        "initSize": 16219,
+        "runSize": 16219
+      },
+      "runtime": {
+        "async": [
+          
+        ],
+        "retried": false,
+        "mode": "regular",
+        "state": null,
+        "IAR": null,
+        "children": [
+          
+        ],
+        "parent": {
+          "flo": null,
+          "exec": null,
+          "invariant": null
+        },
+        "priority": 0,
+        "gc": {
+          "custom": false,
+          "refs": {
+            
+          },
+          "indices": {
+            "HyWTuyfDe": 0,
+            "SklJBezwl": 1,
+            "HkVkSefDg": 2,
+            "SJ8Uqkzwe": 3
+          },
+          "pivots": {
+            "HyWTuyfDe": "r17B4HgMve",
+            "SJ8Uqkzwe": "SyVHVBxGPl",
+            "SklJBezwl": "HkSrVrlGwl",
+            "HkVkSefDg": "HkIHNHxGwe"
+          },
+          "methods": {
+            
+          }
+        },
+        "cache": {
+          
+        }
+      },
+      "data": {
+        "inputs": {
+          "HJ-WT_kzDg": {
+            "id": "HJ-WT_kzDg",
+            "group": "context",
+            "key": "index",
+            "value": {
+              "error": false,
+              "type": "number",
+              "collection": false,
+              "data": null,
+              "available": [
+                
+              ]
+            },
+            "ref": false,
+            "metadata": {
+              "displayname": "Index",
+              "index": 0
+            },
+            "required": false,
+            "flags": "d"
+          },
+          "rJQ-auJzPx": {
+            "id": "rJQ-auJzPx",
+            "group": "context",
+            "key": "execution_id",
+            "value": {
+              "error": false,
+              "type": "string",
+              "collection": false,
+              "data": null,
+              "available": [
+                
+              ]
+            },
+            "ref": false,
+            "metadata": {
+              "displayname": "Execution ID",
+              "index": 1
+            },
+            "required": false,
+            "flags": "d"
+          },
+          "r1lW0OkMPx": {
+            "id": "r1lW0OkMPx",
+            "group": null,
+            "key": "question",
+            "value": {
+              "error": false,
+              "type": "string",
+              "collection": false,
+              "data": "",
+              "available": [
+                "string",
+                "number",
+                "boolean",
+                "Date",
+                "Array",
+                "object",
+                "file",
+                "flo"
+              ]
+            },
+            "ref": false,
+            "metadata": {
+              "index": 2,
+              "typeLocked": true
+            },
+            "required": false,
+            "flags": "d"
+          },
+          "Skgk_c1fDg": {
+            "id": "Skgk_c1fDg",
+            "group": null,
+            "key": "recipient",
+            "value": {
+              "error": false,
+              "type": "string",
+              "collection": false,
+              "data": "",
+              "available": [
+                "string",
+                "number",
+                "boolean",
+                "Date",
+                "Array",
+                "object",
+                "file",
+                "flo"
+              ]
+            },
+            "ref": false,
+            "metadata": {
+              "index": 3
+            },
+            "required": false,
+            "flags": "d"
+          }
+        },
+        "outputs": {
+          
+        }
+      },
+      "text": {
+        "io": {
+          "jsgraph": {
+            "digraph": {
+              "vertices": [
+                {
+                  "vid": "HJ-WT_kzDg",
+                  "vprops": {
+                    "method": "HyWTuyfDe",
+                    "type": "input",
+                    "id": "HJ-WT_kzDg",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "rJQ-auJzPx",
+                  "vprops": {
+                    "method": "HyWTuyfDe",
+                    "type": "input",
+                    "id": "rJQ-auJzPx",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "r1lW0OkMPx",
+                  "vprops": {
+                    "method": "HyWTuyfDe",
+                    "type": "input",
+                    "id": "r1lW0OkMPx",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "Skgk_c1fDg",
+                  "vprops": {
+                    "method": "HyWTuyfDe",
+                    "type": "input",
+                    "id": "Skgk_c1fDg",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "BJxI8qkMDe",
+                  "vprops": {
+                    "method": "SJ8Uqkzwe",
+                    "type": "input",
+                    "id": "BJxI8qkMDe",
+                    "parent": "rykO9kMwe",
+                    "weight": 4
+                  }
+                },
+                {
+                  "vid": "SkZ8LqkGPg",
+                  "vprops": {
+                    "method": "SJ8Uqkzwe",
+                    "type": "input",
+                    "id": "SkZ8LqkGPg",
+                    "parent": "rJeVrgfPg",
+                    "weight": 10
+                  }
+                },
+                {
+                  "vid": "HJMLIq1Gvx",
+                  "vprops": {
+                    "method": "SJ8Uqkzwe",
+                    "type": "input",
+                    "id": "HJMLIq1Gvx",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "rkelJSgGDx",
+                  "vprops": {
+                    "method": "SklJBezwl",
+                    "type": "input",
+                    "id": "rkelJSgGDx",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "rkWx1HlMPx",
+                  "vprops": {
+                    "method": "SklJBezwl",
+                    "type": "input",
+                    "id": "rkWx1HlMPx",
+                    "parent": "rybCdkfwg",
+                    "weight": 4
+                  }
+                },
+                {
+                  "vid": "SJlNyBlMPg",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "input",
+                    "id": "SJlNyBlMPg",
+                    "parent": "r1feyHlGvg",
+                    "weight": 7
+                  }
+                },
+                {
+                  "vid": "B1bN1HxzPg",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "input",
+                    "id": "B1bN1HxzPg",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "SJM41rgzDl",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "input",
+                    "id": "SJM41rgzDl",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "BJXEyBlGPe",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "input",
+                    "id": "BJXEyBlGPe",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "HkN4ySgMDg",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "input",
+                    "id": "HkN4ySgMDg",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "HkrV1BxGDl",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "input",
+                    "id": "HkrV1BxGDl",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "BJHzSlzwg",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "input",
+                    "id": "BJHzSlzwg",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "BydGHgMPg",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "input",
+                    "id": "BydGHgMPg",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "SyS7rgGDg",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "input",
+                    "id": "SyS7rgGDg",
+                    "parent": null,
+                    "weight": 1
+                  }
+                },
+                {
+                  "vid": "HJx-6dyfvg",
+                  "vprops": {
+                    "method": "HyWTuyfDe",
+                    "type": "output",
+                    "id": "HJx-6dyfvg",
+                    "parent": "r17B4HgMve",
+                    "weight": 3
+                  }
+                },
+                {
+                  "vid": "B1G-p_kzvx",
+                  "vprops": {
+                    "method": "HyWTuyfDe",
+                    "type": "output",
+                    "id": "B1G-p_kzvx",
+                    "parent": "r17B4HgMve",
+                    "weight": 3
+                  }
+                },
+                {
+                  "vid": "rybCdkfwg",
+                  "vprops": {
+                    "method": "HyWTuyfDe",
+                    "type": "output",
+                    "id": "rybCdkfwg",
+                    "parent": "r17B4HgMve",
+                    "weight": 3
+                  }
+                },
+                {
+                  "vid": "rykO9kMwe",
+                  "vprops": {
+                    "method": "HyWTuyfDe",
+                    "type": "output",
+                    "id": "rykO9kMwe",
+                    "parent": "r17B4HgMve",
+                    "weight": 3
+                  }
+                },
+                {
+                  "vid": "r1feyHlGvg",
+                  "vprops": {
+                    "method": "SklJBezwl",
+                    "type": "output",
+                    "id": "r1feyHlGvg",
+                    "parent": "HkSrVrlGwl",
+                    "weight": 6
+                  }
+                },
+                {
+                  "vid": "HJLV1BeGPx",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "output",
+                    "id": "HJLV1BeGPx",
+                    "parent": "HkIHNHxGwe",
+                    "weight": 9
+                  }
+                },
+                {
+                  "vid": "rJeVrgfPg",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "type": "output",
+                    "id": "rJeVrgfPg",
+                    "parent": "HkIHNHxGwe",
+                    "weight": 9
+                  }
+                },
+                {
+                  "vid": "r17B4HgMve",
+                  "vprops": {
+                    "method": "HyWTuyfDe",
+                    "pivot": true,
+                    "id": "r17B4HgMve",
+                    "parent": "HJ-WT_kzDg",
+                    "weight": 2
+                  }
+                },
+                {
+                  "vid": "SyVHVBxGPl",
+                  "vprops": {
+                    "method": "SJ8Uqkzwe",
+                    "pivot": true,
+                    "id": "SyVHVBxGPl",
+                    "parent": "SkZ8LqkGPg",
+                    "weight": 11
+                  }
+                },
+                {
+                  "vid": "HkSrVrlGwl",
+                  "vprops": {
+                    "method": "SklJBezwl",
+                    "pivot": true,
+                    "id": "HkSrVrlGwl",
+                    "parent": "rkWx1HlMPx",
+                    "weight": 5
+                  }
+                },
+                {
+                  "vid": "HkIHNHxGwe",
+                  "vprops": {
+                    "method": "HkVkSefDg",
+                    "pivot": true,
+                    "id": "HkIHNHxGwe",
+                    "parent": "SJlNyBlMPg",
+                    "weight": 8
+                  }
+                }
+              ],
+              "edges": [
+                {
+                  "uid": "HJ-WT_kzDg",
+                  "vid": "r17B4HgMve",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "rJQ-auJzPx",
+                  "vid": "r17B4HgMve",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "r1lW0OkMPx",
+                  "vid": "r17B4HgMve",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "Skgk_c1fDg",
+                  "vid": "r17B4HgMve",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "BJxI8qkMDe",
+                  "vid": "SyVHVBxGPl",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "SkZ8LqkGPg",
+                  "vid": "SyVHVBxGPl",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "HJMLIq1Gvx",
+                  "vid": "SyVHVBxGPl",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "rkelJSgGDx",
+                  "vid": "HkSrVrlGwl",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "rkWx1HlMPx",
+                  "vid": "HkSrVrlGwl",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "SJlNyBlMPg",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "B1bN1HxzPg",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "SJM41rgzDl",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "BJXEyBlGPe",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "HkN4ySgMDg",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "HkrV1BxGDl",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "BJHzSlzwg",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "BydGHgMPg",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "SyS7rgGDg",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "rybCdkfwg",
+                  "vid": "rkWx1HlMPx",
+                  "eprops": {
+                    "type": "data"
+                  }
+                },
+                {
+                  "uid": "rykO9kMwe",
+                  "vid": "BJxI8qkMDe",
+                  "eprops": {
+                    "type": "data"
+                  }
+                },
+                {
+                  "uid": "r1feyHlGvg",
+                  "vid": "SJlNyBlMPg",
+                  "eprops": {
+                    "type": "data"
+                  }
+                },
+                {
+                  "uid": "rJeVrgfPg",
+                  "vid": "SkZ8LqkGPg",
+                  "eprops": {
+                    "type": "data"
+                  }
+                },
+                {
+                  "uid": "r17B4HgMve",
+                  "vid": "HJx-6dyfvg",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "r17B4HgMve",
+                  "vid": "B1G-p_kzvx",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "r17B4HgMve",
+                  "vid": "rybCdkfwg",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "r17B4HgMve",
+                  "vid": "rykO9kMwe",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "r17B4HgMve",
+                  "vid": "HkSrVrlGwl",
+                  "eprops": {
+                    "ordering": "rywEyHlzve"
+                  }
+                },
+                {
+                  "uid": "HkSrVrlGwl",
+                  "vid": "r1feyHlGvg",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "HkSrVrlGwl",
+                  "vid": "HkIHNHxGwe",
+                  "eprops": {
+                    "ordering": "H1u41rxzwx"
+                  }
+                },
+                {
+                  "uid": "HkIHNHxGwe",
+                  "vid": "HJLV1BeGPx",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "HkIHNHxGwe",
+                  "vid": "rJeVrgfPg",
+                  "eprops": {
+                    "pivot": true
+                  }
+                },
+                {
+                  "uid": "HkIHNHxGwe",
+                  "vid": "SyVHVBxGPl",
+                  "eprops": {
+                    "ordering": "H1tEyBxfPe"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "methods": {
+          "jsgraph": {
+            "digraph": {
+              "vertices": [
+                {
+                  "vid": "HyWTuyfDe",
+                  "vprops": {
+                    "method": "HyWTuyfDe"
+                  }
+                },
+                {
+                  "vid": "SJ8Uqkzwe",
+                  "vprops": {
+                    "method": "SJ8Uqkzwe"
+                  }
+                },
+                {
+                  "vid": "SklJBezwl",
+                  "vprops": {
+                    "method": "SklJBezwl"
+                  }
+                },
+                {
+                  "vid": "HkVkSefDg",
+                  "vprops": {
+                    "method": "HkVkSefDg"
+                  }
+                }
+              ],
+              "edges": [
+                {
+                  "uid": "HyWTuyfDe",
+                  "vid": "SklJBezwl",
+                  "eprops": {
+                    
+                  }
+                },
+                {
+                  "uid": "SklJBezwl",
+                  "vid": "HkVkSefDg",
+                  "eprops": {
+                    
+                  }
+                },
+                {
+                  "uid": "HkVkSefDg",
+                  "vid": "SJ8Uqkzwe",
+                  "eprops": {
+                    
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "scopes": {
+          "parent": null,
+          "root": "HyWTuyfDe",
+          "vertices": [
+            "HyWTuyfDe",
+            "SklJBezwl",
+            "HkVkSefDg",
+            "SJ8Uqkzwe"
+          ],
+          "children": [
+            
+          ]
+        }
+      }
+    }
+  },
+  "orderings": {
+    "rywEyHlzve": [
+      "HyWTuyfDe",
+      "SklJBezwl"
+    ],
+    "H1u41rxzwx": [
+      "SklJBezwl",
+      "HkVkSefDg"
+    ],
+    "H1tEyBxfPe": [
+      "HkVkSefDg",
+      "SJ8Uqkzwe"
+    ]
+  },
+  "cron": {
+    
+  },
+  "security_level": null,
+  "log": true,
+  "scheduled": false,
+  "group": 22448
+}
