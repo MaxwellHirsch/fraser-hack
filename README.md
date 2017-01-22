@@ -7,7 +7,7 @@ We wanted to create a medical diagnoses app that was accessible by everyone with
 ## What it does
 Through our service, anyone with a cell phone can initiate an adaptive conversation around symptoms they are observing. The service follows-up with questions based on probability of a particular condition and once a likely condition is determined, provides that information and offers a nearby location for follow-up.
 
- ## How we built it
+## How we built it
 In order to implement our service, we leveraged the following services:
 * __Twilio__ API for all SMS communication
 * __Intermedica__ API for symptom analysis and interview protocol
